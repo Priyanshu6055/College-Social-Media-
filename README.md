@@ -11,3 +11,62 @@ capabilities.
 
 Tech use - LARAVEL 
 Server use - WAPM
+
+# 🚀 Laravel Project Setup Guide
+
+This guide will help you clone and set up the Laravel project on your local machine.
+
+---
+
+## 🛠️ Prerequisites
+
+Make sure the following are installed:
+
+- PHP >= 8.x
+- Composer
+- MySQL or compatible database
+- Node.js and npm (for frontend assets)
+- Laravel CLI (optional)
+
+---
+
+## 📥 Clone the Repository
+
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+
+
+
+📦 Install Dependencies
+Install PHP dependencies:
+
+composer install
+
+
+
+⚙️ Environment Setup -
+Copy .env.example to .env:
+cp .env.example .env
+
+
+Generate the application key:
+php artisan key:generate
+
+
+🗄️ Configure Database-
+Edit the .env file with your local database details:
+
+env
+DB_DATABASE=your_db_name
+DB_USERNAME=your_username
+DB_PASSWORD=your_password
+Run migrations (if applicable):
+php artisan migrate
+
+
+
+▶️ Run the Application-
+Serve the Laravel application locally:
+
+php artisan serve
